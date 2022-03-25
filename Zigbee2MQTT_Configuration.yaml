@@ -1,0 +1,12 @@
+# Home Assistant integration (MQTT discovery)
+homeassistant: true
+
+# Enable Web GUI, can just be "frontend: true"
+frontend:
+  # Optional, default 8080
+  port: 8080
+  # Optional, default 0.0.0.0
+  host: 0.0.0.0
+
+# allow new devices to join
+permit_join: true
