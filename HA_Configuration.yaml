@@ -6,7 +6,7 @@ panel_iframe:
     icon: mdi:docker
   vscode:
     title: "VSCode"
-    url: "http://IP_ADDRESS:8080/"
+    url: "http://IP_ADDRESS:8443/"
     icon: mdi:microsoft-visual-studio-code
   esphome:
     title: "ESPHome"
