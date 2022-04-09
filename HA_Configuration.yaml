@@ -17,13 +17,13 @@ panel_iframe:
     url: "http://IP_ADDRESS:8080"
     icon: mdi:zigbee
 
-# my appologies, this is actually not required, just omit
+# my appologies, I missed adding this in the video
 #mqtt data
-#mqtt:
-# broker: IP_ADDRESS
-# port: 1883
-# client_id: home-assistant
-# username: !secret mqtt_user
-# password: !secret mqtt_pass
-# discovery: true
-# discovery_prefix: homeassistant
+mqtt:
+ broker: IP_ADDRESS
+ port: 1883
+ client_id: home-assistant
+ username: !secret mqtt_user
+ password: !secret mqtt_pass
+ discovery: true
+ discovery_prefix: homeassistant
