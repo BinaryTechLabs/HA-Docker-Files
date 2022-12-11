@@ -11,16 +11,6 @@ frontend:
 # allow new devices to join
 permit_join: true
 
-# MQTT settings
-mqtt:
-  # MQTT base topic for zigbee2mqtt MQTT messages
-  base_topic: zigbee2mqtt
-  # MQTT server URL
-  server: 'mqtt://HOST_IP_ADDRESS'
-  # MQTT server authentication, uncomment if required:
-  # user: mqtt-user
-  # password: mqtt-pass
-
 # Serial settings
 serial:
   # Location of CC2531 USB sniffer
