@@ -1,29 +1,41 @@
+# Configure a default setup of Home Assistant (frontend, api, etc)
+default_config:
+
+# Text to speech
+tts:
+  - platform: google_translate
+
+#homeassistant:
+#  packages: !include_dir_named packages
+
+intent:
+
+automation: !include automations.yaml
+script: !include scripts.yaml
+scene: !include scenes.yaml
 
 panel_iframe:
   portainer:
     title: "Portainer"
-    url: "http://IP_ADDRESS:9000"
+    url: "http://0.0.0.0:9000"
     icon: mdi:docker
   vscode:
     title: "VSCode"
-    url: "http://IP_ADDRESS:8443/"
+    url: "http://0.0.0.0:8443/"
     icon: mdi:microsoft-visual-studio-code
   esphome:
     title: "ESPHome"
-    url: "http://IP_ADDRESS:6052"
+    url: "http://0.0.0.0:6052"
     icon: mdi:chip
   zigbee2mqtt:
     title: "Zigbee2MQTT"
-    url: "http://IP_ADDRESS:8080"
+    url: "http://0.0.0.0:8080"
     icon: mdi:zigbee
-
-# my appologies, I missed adding this in the video
-#mqtt data
-mqtt:
- broker: IP_ADDRESS
- port: 1883
- client_id: home-assistant
- username: !secret mqtt_user
- password: !secret mqtt_pass
- discovery: true
- discovery_prefix: homeassistant
+  appdaemon:
+    title: "appdaemon"
+    url: "http://0.0.0.0:5050"
+    icon: mdi:language-python
+  rhasspy:
+    title: "Rhasspy"
+    url: "http://0.0.0.0:12101"
+    icon: mdi:account-voice
